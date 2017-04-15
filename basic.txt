@@ -1,0 +1,1 @@
+{"front":"how","back":"ni"}{"front":"What day is it?","back":"Today. "}{"front":"What day is it today? ","back":"Saturday"}

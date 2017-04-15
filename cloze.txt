@@ -1,0 +1,1 @@
+{"text":"What day is it? ","cloze":"day"}{"full":"Today is Thursday","answer":"Thursday","cloze":"Today is ......."}{"full":"Today is Saturday","answer":"Saturday","cloze":"TOday is ........"}
