@@ -12,11 +12,12 @@ var BasicCard = function(front, back) {
 
 // the cloze card should only take two arguments - the `full` and `answer` and then you determine 
 // what the cloze partial would be by replacing the answer in the full text with ellipsis (...) or something of the sort.
+// setting `this.cloze` equal to the following line would accomplish just that. You'd need to validate that the full text contained the answer though.
 // full.replace(answer, '...')
 var ClozeCard = function(full, answer, cloze) {
 	this.full = full;
 	this.answer = answer;
-  this.cloze = full.replace(answer, '...');
+  this.cloze = cloze;
 };  
 
 if (process.argv[2] === "basic") {
@@ -75,11 +76,11 @@ function clozeFunction () {
         message: "What word would like to hide?"
       },
 
-      // {
-      // 	type: "input",
-      //   name: "cloze",
-      //   message: "Input statement minus answer"
-      // } 
+      {
+      	type: "input",
+        name: "cloze",
+        message: "Input statement minus answer"
+      } 
     ]).then(function(answers) {
      
       var cloze = new ClozeCard(
